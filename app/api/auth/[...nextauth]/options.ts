@@ -16,6 +16,6 @@ export const authOptions: AuthOptions = {
   },
   secret: process.env.NEXT_AUTH_SECURATE,
   pages: {
-    signIn: "/",
+    signIn: "/dashoard",
   },
 };
