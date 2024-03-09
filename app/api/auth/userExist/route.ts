@@ -1,7 +1,7 @@
 import { User } from "@/app/model/User";
 import { connect } from "@/lib/db";
 import { NextRequest, NextResponse } from "next/server";
-
+// exist user email
 export async function POST(request: NextRequest) {
   try {
     await connect();
