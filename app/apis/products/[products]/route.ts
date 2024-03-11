@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-
+// params data fetch
 export const GET = (req: {}, route: { params: { products: string } }) => {
   console.log("req", req);
 
