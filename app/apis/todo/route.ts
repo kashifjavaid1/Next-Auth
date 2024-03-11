@@ -1,11 +1,13 @@
-import { NextResponse } from "next/server";
-
-export const GET = () => {
-  return NextResponse.json({ message: "get request" });
+import { NextRequest, NextResponse } from "next/server";
+// body fetch request
+export const POST = async (req: NextResponse) => {
+  const body = await req.json();
+  console.log("body: ", body);
+  return NextResponse.json({ body: body });
 };
 
-export const POST = () => {
-  return NextResponse.json({ message: "post request" });
+export const GET = () => {
+  return NextResponse.json({ message: "post request successful" });
 };
 
 export const PUT = () => {
