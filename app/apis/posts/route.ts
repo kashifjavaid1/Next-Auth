@@ -44,3 +44,8 @@ export const PUT = async (req: NextResponse) => {
   });
   return NextResponse.json("post successfully updated");
 };
+
+// delete
+export const DELETE = () => {
+  return NextResponse.json("post successfully deleted");
+};
